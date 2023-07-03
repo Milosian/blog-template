@@ -1,14 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+:root{
+    --main-color: #193F42;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+html{
+    scroll-behavior: smooth;
 }
 header{
-    justify-content: center;
+    background-color: #215558;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px 15%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    align-items: center;
 }
-.menu-navigation li{
+.navigation{
     padding: 10px;
-    position: relative;
+    text-align: right;
+}
+.navigation a{
+    color:white;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.2s;
+}
+.navigation a:hover,
+.navigation a.active{
+    color: #50e0cd;
+}
+.logo{
+    color: white;
+    font-size: 20pt;  
+    font-style: italic; 
     text-decoration: none;
     list-style: none;
 }
+body{
+    background-color: var(--main-color);
+    color: white;
+}
+#welcome-baner{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    padding: 10%;
+    background-image: url(./graphics/man-photo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 82%; 
+    
+}
+.content{
+    max-width: 500px;
+    margin-left: 40px;
+}
+.content p{
+    margin: 20px 0 15px;
+}
+.read-more-btn{
+    display: inline-block;
+    justify-content: center;
+    background-color: rgb(23, 107, 107);
+    text-decoration: none;
+    height: 100%;
+    padding: 5px;
+    border: 2px solid rgb(23, 107, 107);
+    border-radius: 6px;
+    font-size: 15pt;
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+.read-more-btn:hover{
+    background-color: transparent
+}
+
