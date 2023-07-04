@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 :root{
-    --main-color: #193F42;
+    --menu-color: #071113;
+    --text-color: rgb(13, 68, 68)
 }
 *{
     margin: 0;
@@ -12,12 +13,12 @@ html{
     scroll-behavior: smooth;
 }
 header{
-    background-color: #215558;
+    background-color: var(--menu-color);
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    padding: 10px 15%;
+    padding: 18px 15%;
     display: flex;
     justify-content: space-between;
     z-index: 100;
@@ -33,6 +34,7 @@ header{
     text-decoration: none;
     margin-left: 30px;
     transition: 0.2s;
+    font-size: 13pt;
 }
 .navigation a:hover,
 .navigation a.active{
@@ -46,23 +48,24 @@ header{
     list-style: none;
 }
 body{
-    background-color: var(--main-color);
+    background-color: black;
     color: white;
 }
 #welcome-baner{
     display: flex;
     height: 100vh;
+    width: 100%;
     align-items: center;
     padding: 10%;
     background-image: url(./graphics/man-photo.jpg);
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: 82%; 
+    background-size: 90%;
     
 }
 .content{
     max-width: 500px;
-    margin-left: 40px;
+    margin-left: 110vh;
 }
 .content p{
     margin: 20px 0 15px;
@@ -70,11 +73,11 @@ body{
 .read-more-btn{
     display: inline-block;
     justify-content: center;
-    background-color: rgb(23, 107, 107);
+    background-color: var(--text-color);
     text-decoration: none;
     height: 100%;
     padding: 5px;
-    border: 2px solid rgb(23, 107, 107);
+    border: 2px solid var(--text-color);
     border-radius: 6px;
     font-size: 15pt;
     color: white;
@@ -83,5 +86,67 @@ body{
 }
 .read-more-btn:hover{
     background-color: transparent
+}
+#section-posts{
+    height: 140vh;
+}
+#section-posts{
+    background-color: #0c0c0c;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid rgb(0,0,0,0.5);
+}
+.posts-title{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.posts-title span{
+    color:#2d6b77;
+    font-size: 20pt;
+}
+.post-img{
+    width: 100%;
+    height: auto;   
+}
+.post-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.post-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+.post-box{
+    width: 350px;
+    background-color: #000000;
+    border: 1px solid #111111;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px #0c1d20;
+    margin: 20px;
+
+}
+.post-content{
+    color: #071113;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.post-content span{
+    color: var(--text-color);
+    font-size: 13pt;
+}
+.post-content a{
+    text-decoration: none;
+    color: var(--text-color)
 }
 
