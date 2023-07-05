@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 :root{
     --menu-color: #071113;
-    --text-color: rgb(13, 68, 68)
+    --text-color: #42a4b8;
 }
 *{
     margin: 0;
@@ -90,6 +90,7 @@ body{
 #section-posts{
     height: 140vh;
 }
+/* Customization of post section */
 #section-posts{
     background-color: #0c0c0c;
     display: flex;
@@ -106,7 +107,7 @@ body{
     align-items: center;
 }
 .posts-title span{
-    color:#2d6b77;
+    color:#4197a8;
     font-size: 20pt;
 }
 .post-img{
@@ -131,8 +132,8 @@ body{
     background-color: #000000;
     border: 1px solid #111111;
     border-radius: 7px;
-    box-shadow: 5px 5px 5px #0c1d20;
-    margin: 20px;
+    box-shadow: 0px 0px 10px 5px #1c4249;
+    margin: 30px;
 
 }
 .post-content{
@@ -143,10 +144,20 @@ body{
 }
 .post-content span{
     color: var(--text-color);
-    font-size: 13pt;
+    font-size: 11pt;
+    margin-bottom: 10px;
+    margin-top: -15px;
 }
 .post-content a{
     text-decoration: none;
-    color: var(--text-color)
+    color: var(--text-color);
+    margin-top: 20px;
+    font-size: 15pt;
+}
+.post-content p{
+    color: var(--text-color);
+    margin-top: 10px;
+    
 }
 
+/* End of Customization post section */
